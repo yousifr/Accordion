@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  background-color: rgb(21, 230, 132);
+  color: rgb(67, 6, 207);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  width: 70%;
+  text-align: left;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.6;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(175, 170, 170);
+}
+
+.panel {
+  padding: 0 1.5rem;
+  background-color: rgb(177, 194, 79);
+  width: 70%;
+  display: none;
+  overflow: hidden;
+}
